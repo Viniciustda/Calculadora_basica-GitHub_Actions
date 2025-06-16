@@ -1,6 +1,6 @@
 # test_calculadora.py (versao para pytest)
 import pytest
-from calculadora import somar, subtrair, multiplicar, dividir, potencia
+from calculadora import somar, subtrair, multiplicar, dividir, potencia, porcentagem
 
 def test_somar():
     assert somar(5, 3) == 8
@@ -20,3 +20,6 @@ def test_dividir_por_zero():
 
 def test_potencia():
     assert potencia(2, 3) == 8
+
+def test_porcentagem():
+    assert porcentagem(66, 50) == 33

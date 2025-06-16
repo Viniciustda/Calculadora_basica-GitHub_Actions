@@ -15,3 +15,6 @@ def dividir(a, b):
 
 def potencia(base, expoente):
     return base ** expoente
+
+def porcentagem(numero, percentual):
+    return (numero * percentual) / 100
