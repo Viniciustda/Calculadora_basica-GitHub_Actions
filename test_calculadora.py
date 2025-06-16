@@ -1,6 +1,6 @@
 # test_calculadora.py (versao para pytest)
 import pytest
-from calculadora import somar, subtrair, multiplicar, dividir
+from calculadora import somar, subtrair, multiplicar, dividir, potencia
 
 def test_somar():
     assert somar(5, 3) == 8
@@ -17,3 +17,6 @@ def test_dividir():
 def test_dividir_por_zero():
     with pytest.raises(ValueError, match="Nao e possivel dividir por zero"):
         dividir(10, 0)
+
+def test_potencia():
+    assert potencia(2, 3) == 8
